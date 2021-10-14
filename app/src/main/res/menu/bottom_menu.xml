@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Load"
+        android:title="Load content to send"
+        android:icon="@drawable/ic_open_24"
+        />
+
+    <item
+        android:id="@+id/Scan"
+        android:title="Scan for services on local network"
+        android:icon="@drawable/ic_scanner_24"
+        />
+
+    <item
+        android:id="@+id/Exit"
+        android:title="Shut down service and exit"
+        android:icon="@drawable/ic_exit_24"
+        />
+
+</menu>

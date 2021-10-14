@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/default_destination_status"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Default destination not set"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/note_list"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="List of detected devices:"
+        android:layout_below="@+id/default_destination_status"/>
+
+    <ScrollView
+        android:layout_below="@id/note_list"
+        android:id="@+id/topScollView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#f0f0f0"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/local_services"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/note_log"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Log:"
+        android:layout_below="@+id/topScollView" />
+
+    <ScrollView
+        android:layout_below="@id/note_log"
+        android:layout_above="@+id/bottom_buttons"
+        android:id="@+id/log_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#f0f0f0"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:id="@+id/log"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/bottomGear"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_sharp_settings_24"
+            android:background="@drawable/selected_element_shape"
+            />
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/infoButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_info_24"
+            android:background="@drawable/selected_element_shape"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

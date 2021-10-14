@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#978F8F</item>
+        <item name="colorPrimaryDark">#978F8F</item>
+        <item name="colorAccent">#978F8F</item>
+    </style>
+
+    <style name="myPopupStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:itemBackground">@drawable/selected_element_shape</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
